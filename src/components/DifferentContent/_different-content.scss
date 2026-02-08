@@ -1,0 +1,8 @@
+@use '../../styles/abstract/mixins' as mixins;
+@use '../../styles/abstract/variables' as vars;
+
+.tab-content {
+  background-color: vars.$bg-light;
+
+  @include mixins.btn-container($v: 32px);
+}

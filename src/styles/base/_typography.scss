@@ -1,0 +1,12 @@
+@use '../abstract/variables' as vars;
+
+p {
+  font-size: vars.$font-md;
+}
+
+h4 {
+  margin-bottom: 16px;
+
+  font-size: vars.$font-lg;
+  color: vars.$primary-dark;
+}

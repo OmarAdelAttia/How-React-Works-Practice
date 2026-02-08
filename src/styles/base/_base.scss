@@ -1,0 +1,9 @@
+@use '../abstract/variables' as vars;
+
+body {
+  margin: 48px 96px;
+  position: relative;
+  font-family: sans-serif;
+
+  color: vars.$dark;
+}

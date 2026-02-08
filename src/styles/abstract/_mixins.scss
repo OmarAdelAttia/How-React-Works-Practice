@@ -1,0 +1,15 @@
+@mixin flex($gap: 8px, $align: stretch, $justify: flex-start) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin btn-container($border-radius: 12px, $v: 12px, $h: 12px) {
+  border-radius: $border-radius;
+  @if $h == null {
+    padding: $v;
+  } @else {
+    padding: $v $h;
+  }
+}

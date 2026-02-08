@@ -1,0 +1,47 @@
+@use '../../styles/abstract/mixins' as mixins;
+@use '../../styles/abstract/variables' as vars;
+
+.tab-content {
+  background-color: vars.$bg-light;
+
+  @include mixins.btn-container($v: 32px);
+}
+
+.tab-actions {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  @include mixins.flex($justify: space-between, $gap: 0px);
+}
+
+.tab-actions > button {
+  background: none;
+  text-decoration: underline;
+
+  font-size: vars.$font-xs;
+  color: vars.$primary-light;
+}
+
+.hearts-counter {
+  @include mixins.flex($align: space-between);
+}
+
+.hearts-counter button {
+  line-height: 1;
+
+  color: vars.$light;
+  background-color: vars.$bg-fire;
+
+  @include mixins.btn-container($v: 4px, $h: 6px, $border-radius: 4px);
+}
+
+.tab-undo {
+  @include mixins.flex();
+}
+
+.tab-undo button {
+  @include mixins.btn-container($v: 6px, $h: 12px, $border-radius: 4px);
+
+  color: vars.$light;
+  background-color: vars.$primary-dark;
+}
