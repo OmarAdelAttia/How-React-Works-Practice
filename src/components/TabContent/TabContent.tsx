@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // types
-import type { ContentItemProps } from '../models/ContentItemProps';
+import type { ContentItemProps } from '../../models/ContentItemProps';
 
 export default function TabContent({ item }: { item: ContentItemProps | undefined }) {
   const [showDetails, setShowDetails] = useState(true);
